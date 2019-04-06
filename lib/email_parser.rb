@@ -10,12 +10,12 @@ class EmailParser
 
   def initialize(emails)
     @emails = emails
-
+    @emails.parse
   end
 
   def parse
     @emails.split
-    
+
   end
 
 end
