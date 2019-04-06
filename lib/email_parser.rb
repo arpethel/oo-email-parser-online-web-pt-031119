@@ -19,6 +19,7 @@ class EmailParser
     # binding.pry
     emails = @emails.split(Regexp.union(delimiters))
     emails = emails.select {|email| !email.empty? }
+    emails.uniq
     binding.pry
   end
 
