@@ -14,7 +14,9 @@ class EmailParser
   end
 
   def parse
-    @emails.split
+    parsed_emails = @emails.split
+    binding.pry
+    parsed_emails.uniq
 
   end
 
