@@ -16,9 +16,9 @@ class EmailParser
   def parse
     # binding.pry
     delimiters = [',', ' ']
+    # binding.pry
+    emails = @emails.split(Regexp.union(delimiters))
     binding.pry
-    emails = (@emails.split(Regexp.union(delimiters))).join
-
   end
 
 end
