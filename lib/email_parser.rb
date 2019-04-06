@@ -18,8 +18,8 @@ class EmailParser
     delimiters = [',', ' ']
     # binding.pry
     emails = @emails.split(Regexp.union(delimiters))
-    emails.select {|email| !email.empty? }
-    # binding.pry
+    emails = emails.select {|email| !email.empty? }
+    binding.pry
   end
 
 end
