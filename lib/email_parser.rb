@@ -13,7 +13,7 @@ class EmailParser
 
   end
 
-  def parse(csv_email)
+  def parse
     binding.pry
   end
 
